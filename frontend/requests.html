@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>My Requests</title>
+
+    <link rel="stylesheet"
+          href="Css/style.css">
+
+</head>
+
+<body>
+
+<div class="navbar">
+
+    <div class="nav-title">
+        📋 Workflow Approval
+    </div>
+
+    <div class="nav-links">
+
+        <a href="dashboard.html">
+            Dashboard
+        </a>
+
+        <a
+            href="create.html"
+            id="createMenu"
+            style="display:none;"
+        >
+            Create Request
+        </a>
+
+        <a
+            href="requests.html"
+            id="requestMenu"
+            style="display:none;"
+        >
+            My Requests
+        </a>
+
+        <a
+            href="approvals.html"
+            id="approvalMenu"
+            style="display:none;"
+        >
+            Pending Approvals
+        </a>
+
+        <a
+            href="#"
+            onclick="logout()"
+        >
+            Logout
+        </a>
+
+    </div>
+
+</div>
+
+<div class="container">
+
+    <h1>My Requests</h1>
+
+    <table class="request-table">
+
+        <thead>
+
+            <tr>
+
+                <th>Title</th>
+
+                <th>Priority</th>
+
+                <th>Status</th>
+
+                <th>Date</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody id="requestTable">
+
+        </tbody>
+
+    </table>
+
+</div>
+
+<div id="modal" class="modal">
+
+    <div class="modal-content">
+
+        <h2 id="modalTitle"></h2>
+
+        <p>
+            <b>Priority:</b>
+            <span id="modalPriority"></span>
+        </p>
+
+        <p>
+            <b>Status:</b>
+            <span id="modalStatus"></span>
+        </p>
+
+        <p>
+            <b>Description:</b>
+        </p>
+
+        <p id="modalDescription"></p>
+
+        <button onclick="closeModal()">
+            Close
+        </button>
+
+    </div>
+
+</div>
+
+<script src="js/navbar.js?v=1"></script>
+<script src="js/request.js"></script>
+
+</body>
+
+</html>

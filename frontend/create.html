@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Create Request</title>
+
+    <link rel="stylesheet" href="Css/style.css">
+
+</head>
+
+<body>
+
+<div class="navbar">
+
+    <div class="nav-title">
+        📋 Workflow Approval
+    </div>
+
+    <div class="nav-links">
+
+        <a href="dashboard.html">
+            Dashboard
+        </a>
+
+        <a
+            href="create.html"
+            id="createMenu"
+            style="display:none;"
+        >
+            Create Request
+        </a>
+
+        <a
+            href="requests.html"
+            id="requestMenu"
+            style="display:none;"
+        >
+            My Requests
+        </a>
+
+        <a
+            href="approvals.html"
+            id="approvalMenu"
+            style="display:none;"
+        >
+            Pending Approvals
+        </a>
+
+        <a
+            href="#"
+            onclick="logout()"
+        >
+            Logout
+        </a>
+
+    </div>
+
+</div>
+
+<div class="form-container">
+
+    <h1>Create Request</h1>
+
+    <input
+        type="text"
+        id="title"
+        placeholder="Request Title"
+    >
+
+    <textarea
+        id="description"
+        placeholder="Description"
+    ></textarea>
+
+    <select id="priority">
+
+        <option value="Low">Low</option>
+
+        <option value="Medium">Medium</option>
+
+        <option value="High">High</option>
+
+    </select>
+
+    <button onclick="createRequest()">
+        Submit Request
+    </button>
+
+    <p id="message"></p>
+
+</div>
+
+<script src="js/navbar.js?v=1"></script>
+<script src="js/create.js"></script>
+
+</body>
+
+</html>
