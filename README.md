@@ -195,13 +195,37 @@ in your web browser.
 
 ---
 
-## 🔐 Authentication
+## 🔐 Authentication & Authorization
 
-- JWT-based authentication
-- Role-based authorization
+The application implements secure authentication and role-based access control using JSON Web Tokens (JWT).
+
+### Authentication
+- User login with username and password
+- JWT access token generation after successful login
+- Token stored in browser local storage
+- Token included in the `Authorization` header for protected API requests
+
+### Authorization
+The system enforces role-based access control (RBAC):
+
+- **Employee**
+  - Create workflow requests
+  - View personal requests and their status
+
+- **Manager**
+  - View pending requests
+  - Approve or reject employee requests
+  - Access manager dashboard
+
+- **Admin**
+  - Access administrative dashboard
+
+### Security Features
 - Protected API endpoints
-- Secure login system
-
+- JWT token verification for every authenticated request
+- Role-based page navigation
+- Unauthorized users are redirected to the appropriate page
+- Session cleared on logout by removing stored authentication data
 ---
 
 ## 📌 Future Enhancements
