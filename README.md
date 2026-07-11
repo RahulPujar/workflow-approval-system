@@ -151,48 +151,71 @@ in your web browser.
 
 ---
 
-## 📸 Screenshots
+## 📸 Application Screenshots
 
-### Login
+### 🔐 Employee Login
 
-*(Add login screenshot here)*
-
----
-
-### Employee Dashboard
-
-*(Add employee dashboard screenshot here)*
+![Employee Login](screenshots/Emp%20login.png)
 
 ---
 
-### Create Request
+### 📊 Employee Dashboard
 
-*(Add create request screenshot here)*
-
----
-
-### My Requests
-
-*(Add my requests screenshot here)*
+![Employee Dashboard](screenshots/emp%20dashboard.png)
 
 ---
 
-### Manager Dashboard
+### ➕ Create Request
 
-*(Add manager dashboard screenshot here)*
-
----
-
-### Pending Approvals
-
-*(Add pending approvals screenshot here)*
+![Create Request](screenshots/create%20request.png)
 
 ---
 
-### Admin Dashboard
+### 📋 Request Created Successfully
 
-*(Add admin dashboard screenshot here)*
+![Request Created](screenshots/Request%20c%20reated.png)
 
+---
+
+### 📈 Request Status
+
+![Request Status](screenshots/Request%20status.png)
+
+---
+
+### 🔐 Manager Login
+
+![Manager Login](screenshots/Mgr%20login.png)
+
+---
+
+### 📊 Manager Dashboard
+
+![Manager Dashboard](screenshots/Mgr%20dashboard.png)
+
+---
+
+### ✅ Pending Approvals
+
+![Pending Approvals](screenshots/Pending%20approvals.png)
+
+---
+
+### ✔️ Request Approved
+
+![Request Approved](screenshots/Request%20approved.png)
+
+---
+
+### 🔐 Admin Login
+
+![Admin Login](screenshots/Admin%20login.png)
+
+---
+
+### 📊 Admin Dashboard
+
+![Admin Dashboard](screenshots/Admin%20dashboard.png)
 ---
 
 ## 🔐 Authentication & Authorization
